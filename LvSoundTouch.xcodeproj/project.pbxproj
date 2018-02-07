@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9C1ED1F20254CE300574F6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C1ED1E20254CE300574F6C /* AppDelegate.swift */; };
+		A9C1ED2120254CE300574F6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C1ED2020254CE300574F6C /* ViewController.swift */; };
+		A9C1ED2420254CE300574F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C1ED2220254CE300574F6C /* Main.storyboard */; };
+		A9C1ED2620254CE300574F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C1ED2520254CE300574F6C /* Assets.xcassets */; };
+		A9C1ED2920254CE300574F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C1ED2720254CE300574F6C /* LaunchScreen.storyboard */; };
+		A9C1ED3420254CE400574F6C /* LvSoundTouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C1ED3320254CE400574F6C /* LvSoundTouchTests.swift */; };
+		A9C1ED3F20254CE400574F6C /* LvSoundTouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C1ED3E20254CE400574F6C /* LvSoundTouchUITests.swift */; };
+		A9C1EDA120255A7000574F6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EDA020255A6200574F6C /* QuartzCore.framework */; };
+		A9C1EDA320255A8500574F6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EDA220255A7800574F6C /* AVFoundation.framework */; };
+		A9C1EDA520255AB000574F6C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EDA420255AA600574F6C /* AudioToolbox.framework */; };
+		A9C1EDA720255AC300574F6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EDA620255ABC00574F6C /* UIKit.framework */; };
+		A9C1EDA920255AE200574F6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EDA820255AD000574F6C /* Foundation.framework */; };
+		A9C1EDAB20255B0200574F6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EDAA20255AF100574F6C /* CoreGraphics.framework */; };
+		A9C1EE182025996900574F6C /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE172025996900574F6C /* Recorder.m */; };
+		A9C1EE5A202599F000574F6C /* AudioConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE1B202599F000574F6C /* AudioConvert.m */; };
+		A9C1EE5B202599F000574F6C /* AudioDecodeOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE1E202599F000574F6C /* AudioDecodeOperation.mm */; };
+		A9C1EE5C202599F000574F6C /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE21202599F000574F6C /* CAStreamBasicDescription.cpp */; };
+		A9C1EE5D202599F000574F6C /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE23202599F000574F6C /* CAXException.cpp */; };
+		A9C1EE5E202599F000574F6C /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE2A202599F000574F6C /* amrFileCodec.m */; };
+		A9C1EE5F202599F000574F6C /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE2C202599F000574F6C /* wav.mm */; };
+		A9C1EE60202599F000574F6C /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EE2E202599F000574F6C /* libopencore-amrnb.a */; };
+		A9C1EE61202599F000574F6C /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EE2F202599F000574F6C /* libopencore-amrwb.a */; };
+		A9C1EE62202599F000574F6C /* AudioEncodeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE38202599F000574F6C /* AudioEncodeOperation.m */; };
+		A9C1EE63202599F000574F6C /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C1EE3B202599F000574F6C /* libmp3lame.a */; };
+		A9C1EE64202599F000574F6C /* AudioSoundTouchOperation.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE3E202599F000574F6C /* AudioSoundTouchOperation.mm */; };
+		A9C1EE65202599F000574F6C /* WaveHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE3F202599F000574F6C /* WaveHeader.cpp */; };
+		A9C1EE66202599F000574F6C /* ReadMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9C1EE41202599F000574F6C /* ReadMe.strings */; };
+		A9C1EE67202599F000574F6C /* AAFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE43202599F000574F6C /* AAFilter.cpp */; };
+		A9C1EE68202599F000574F6C /* BPMDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE45202599F000574F6C /* BPMDetect.cpp */; };
+		A9C1EE69202599F000574F6C /* cpu_detect_x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE48202599F000574F6C /* cpu_detect_x86.cpp */; };
+		A9C1EE6A202599F000574F6C /* FIFOSampleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE49202599F000574F6C /* FIFOSampleBuffer.cpp */; };
+		A9C1EE6B202599F000574F6C /* FIRFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE4C202599F000574F6C /* FIRFilter.cpp */; };
+		A9C1EE6C202599F000574F6C /* mmx_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE4E202599F000574F6C /* mmx_optimized.cpp */; };
+		A9C1EE6D202599F000574F6C /* PeakFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE4F202599F000574F6C /* PeakFinder.cpp */; };
+		A9C1EE6E202599F000574F6C /* RateTransposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE51202599F000574F6C /* RateTransposer.cpp */; };
+		A9C1EE6F202599F000574F6C /* SoundTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE53202599F000574F6C /* SoundTouch.cpp */; };
+		A9C1EE70202599F000574F6C /* sse_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE56202599F000574F6C /* sse_optimized.cpp */; };
+		A9C1EE71202599F000574F6C /* TDStretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE58202599F000574F6C /* TDStretch.cpp */; };
+		A9C1EE7920259D4900574F6C /* DotimeManage.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE7420259D4900574F6C /* DotimeManage.m */; };
+		A9C1EE7A20259D4900574F6C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9C1EE7620259D4900574F6C /* SVProgressHUD.bundle */; };
+		A9C1EE7B20259D4900574F6C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C1EE7820259D4900574F6C /* SVProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9C1ED3020254CE400574F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9C1ED1320254CE300574F6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9C1ED1A20254CE300574F6C;
+			remoteInfo = LvSoundTouch;
+		};
+		A9C1ED3B20254CE400574F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9C1ED1320254CE300574F6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9C1ED1A20254CE300574F6C;
+			remoteInfo = LvSoundTouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A973091B2027FE430034FE05 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		A9C1ED1B20254CE300574F6C /* LvSoundTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LvSoundTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C1ED1E20254CE300574F6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9C1ED2020254CE300574F6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9C1ED2320254CE300574F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9C1ED2520254CE300574F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9C1ED2820254CE300574F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9C1ED2A20254CE300574F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C1ED2F20254CE400574F6C /* LvSoundTouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LvSoundTouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C1ED3320254CE400574F6C /* LvSoundTouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvSoundTouchTests.swift; sourceTree = "<group>"; };
+		A9C1ED3520254CE400574F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C1ED3A20254CE400574F6C /* LvSoundTouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LvSoundTouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C1ED3E20254CE400574F6C /* LvSoundTouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LvSoundTouchUITests.swift; sourceTree = "<group>"; };
+		A9C1ED4020254CE400574F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C1EDA020255A6200574F6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A9C1EDA220255A7800574F6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A9C1EDA420255AA600574F6C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A9C1EDA620255ABC00574F6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9C1EDA820255AD000574F6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9C1EDAA20255AF100574F6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9C1EE162025996900574F6C /* Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recorder.h; sourceTree = "<group>"; };
+		A9C1EE172025996900574F6C /* Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recorder.m; sourceTree = "<group>"; };
+		A9C1EE1A202599F000574F6C /* AudioConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioConvert.h; sourceTree = "<group>"; };
+		A9C1EE1B202599F000574F6C /* AudioConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioConvert.m; sourceTree = "<group>"; };
+		A9C1EE1D202599F000574F6C /* AudioDecodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDecodeOperation.h; sourceTree = "<group>"; };
+		A9C1EE1E202599F000574F6C /* AudioDecodeOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioDecodeOperation.mm; sourceTree = "<group>"; };
+		A9C1EE1F202599F000574F6C /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		A9C1EE20202599F000574F6C /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		A9C1EE21202599F000574F6C /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		A9C1EE22202599F000574F6C /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		A9C1EE23202599F000574F6C /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		A9C1EE24202599F000574F6C /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		A9C1EE25202599F000574F6C /* AudioDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDefine.h; sourceTree = "<group>"; };
+		A9C1EE29202599F000574F6C /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		A9C1EE2A202599F000574F6C /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amrFileCodec.m; sourceTree = "<group>"; };
+		A9C1EE2B202599F000574F6C /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		A9C1EE2C202599F000574F6C /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		A9C1EE2E202599F000574F6C /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		A9C1EE2F202599F000574F6C /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		A9C1EE31202599F000574F6C /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		A9C1EE32202599F000574F6C /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		A9C1EE34202599F000574F6C /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		A9C1EE35202599F000574F6C /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		A9C1EE37202599F000574F6C /* AudioEncodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEncodeOperation.h; sourceTree = "<group>"; };
+		A9C1EE38202599F000574F6C /* AudioEncodeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEncodeOperation.m; sourceTree = "<group>"; };
+		A9C1EE3A202599F000574F6C /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		A9C1EE3B202599F000574F6C /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		A9C1EE3D202599F000574F6C /* AudioSoundTouchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSoundTouchOperation.h; sourceTree = "<group>"; };
+		A9C1EE3E202599F000574F6C /* AudioSoundTouchOperation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioSoundTouchOperation.mm; sourceTree = "<group>"; };
+		A9C1EE3F202599F000574F6C /* WaveHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveHeader.cpp; sourceTree = "<group>"; };
+		A9C1EE40202599F000574F6C /* WaveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveHeader.h; sourceTree = "<group>"; };
+		A9C1EE41202599F000574F6C /* ReadMe.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ReadMe.strings; sourceTree = "<group>"; };
+		A9C1EE43202599F000574F6C /* AAFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AAFilter.cpp; sourceTree = "<group>"; };
+		A9C1EE44202599F000574F6C /* AAFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAFilter.h; sourceTree = "<group>"; };
+		A9C1EE45202599F000574F6C /* BPMDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPMDetect.cpp; sourceTree = "<group>"; };
+		A9C1EE46202599F000574F6C /* BPMDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMDetect.h; sourceTree = "<group>"; };
+		A9C1EE47202599F000574F6C /* cpu_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_detect.h; sourceTree = "<group>"; };
+		A9C1EE48202599F000574F6C /* cpu_detect_x86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cpu_detect_x86.cpp; sourceTree = "<group>"; };
+		A9C1EE49202599F000574F6C /* FIFOSampleBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIFOSampleBuffer.cpp; sourceTree = "<group>"; };
+		A9C1EE4A202599F000574F6C /* FIFOSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSampleBuffer.h; sourceTree = "<group>"; };
+		A9C1EE4B202599F000574F6C /* FIFOSamplePipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSamplePipe.h; sourceTree = "<group>"; };
+		A9C1EE4C202599F000574F6C /* FIRFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIRFilter.cpp; sourceTree = "<group>"; };
+		A9C1EE4D202599F000574F6C /* FIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRFilter.h; sourceTree = "<group>"; };
+		A9C1EE4E202599F000574F6C /* mmx_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mmx_optimized.cpp; sourceTree = "<group>"; };
+		A9C1EE4F202599F000574F6C /* PeakFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PeakFinder.cpp; sourceTree = "<group>"; };
+		A9C1EE50202599F000574F6C /* PeakFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeakFinder.h; sourceTree = "<group>"; };
+		A9C1EE51202599F000574F6C /* RateTransposer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RateTransposer.cpp; sourceTree = "<group>"; };
+		A9C1EE52202599F000574F6C /* RateTransposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateTransposer.h; sourceTree = "<group>"; };
+		A9C1EE53202599F000574F6C /* SoundTouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundTouch.cpp; sourceTree = "<group>"; };
+		A9C1EE54202599F000574F6C /* SoundTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundTouch.h; sourceTree = "<group>"; };
+		A9C1EE55202599F000574F6C /* soundtouch_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundtouch_config.h; sourceTree = "<group>"; };
+		A9C1EE56202599F000574F6C /* sse_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sse_optimized.cpp; sourceTree = "<group>"; };
+		A9C1EE57202599F000574F6C /* STTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTypes.h; sourceTree = "<group>"; };
+		A9C1EE58202599F000574F6C /* TDStretch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TDStretch.cpp; sourceTree = "<group>"; };
+		A9C1EE59202599F000574F6C /* TDStretch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDStretch.h; sourceTree = "<group>"; };
+		A9C1EE7320259D4900574F6C /* DotimeManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotimeManage.h; sourceTree = "<group>"; };
+		A9C1EE7420259D4900574F6C /* DotimeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotimeManage.m; sourceTree = "<group>"; };
+		A9C1EE7620259D4900574F6C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A9C1EE7720259D4900574F6C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		A9C1EE7820259D4900574F6C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9C1ED1820254CE300574F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C1EDAB20255B0200574F6C /* CoreGraphics.framework in Frameworks */,
+				A9C1EDA920255AE200574F6C /* Foundation.framework in Frameworks */,
+				A9C1EE61202599F000574F6C /* libopencore-amrwb.a in Frameworks */,
+				A9C1EDA320255A8500574F6C /* AVFoundation.framework in Frameworks */,
+				A9C1EDA720255AC300574F6C /* UIKit.framework in Frameworks */,
+				A9C1EE60202599F000574F6C /* libopencore-amrnb.a in Frameworks */,
+				A9C1EE63202599F000574F6C /* libmp3lame.a in Frameworks */,
+				A9C1EDA520255AB000574F6C /* AudioToolbox.framework in Frameworks */,
+				A9C1EDA120255A7000574F6C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C1ED2C20254CE400574F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C1ED3720254CE400574F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9C1ED1220254CE300574F6C = {
+			isa = PBXGroup;
+			children = (
+				A973091B2027FE430034FE05 /* Header.h */,
+				A9C1EE19202599F000574F6C /* AudioConvert */,
+				A9C1ED1D20254CE300574F6C /* LvSoundTouch */,
+				A9C1ED3220254CE400574F6C /* LvSoundTouchTests */,
+				A9C1ED3D20254CE400574F6C /* LvSoundTouchUITests */,
+				A9C1ED1C20254CE300574F6C /* Products */,
+				A9C1ED9F20255A6100574F6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9C1ED1C20254CE300574F6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1ED1B20254CE300574F6C /* LvSoundTouch.app */,
+				A9C1ED2F20254CE400574F6C /* LvSoundTouchTests.xctest */,
+				A9C1ED3A20254CE400574F6C /* LvSoundTouchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9C1ED1D20254CE300574F6C /* LvSoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE7220259D4900574F6C /* Dotime */,
+				A9C1EE7520259D4900574F6C /* SVProgressHUD */,
+				A9C1EE152025996900574F6C /* Recorder */,
+				A9C1ED1E20254CE300574F6C /* AppDelegate.swift */,
+				A9C1ED2020254CE300574F6C /* ViewController.swift */,
+				A9C1ED2220254CE300574F6C /* Main.storyboard */,
+				A9C1ED2520254CE300574F6C /* Assets.xcassets */,
+				A9C1ED2720254CE300574F6C /* LaunchScreen.storyboard */,
+				A9C1ED2A20254CE300574F6C /* Info.plist */,
+			);
+			path = LvSoundTouch;
+			sourceTree = "<group>";
+		};
+		A9C1ED3220254CE400574F6C /* LvSoundTouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1ED3320254CE400574F6C /* LvSoundTouchTests.swift */,
+				A9C1ED3520254CE400574F6C /* Info.plist */,
+			);
+			path = LvSoundTouchTests;
+			sourceTree = "<group>";
+		};
+		A9C1ED3D20254CE400574F6C /* LvSoundTouchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1ED3E20254CE400574F6C /* LvSoundTouchUITests.swift */,
+				A9C1ED4020254CE400574F6C /* Info.plist */,
+			);
+			path = LvSoundTouchUITests;
+			sourceTree = "<group>";
+		};
+		A9C1ED9F20255A6100574F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EDAA20255AF100574F6C /* CoreGraphics.framework */,
+				A9C1EDA820255AD000574F6C /* Foundation.framework */,
+				A9C1EDA620255ABC00574F6C /* UIKit.framework */,
+				A9C1EDA420255AA600574F6C /* AudioToolbox.framework */,
+				A9C1EDA220255A7800574F6C /* AVFoundation.framework */,
+				A9C1EDA020255A6200574F6C /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9C1EE152025996900574F6C /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE162025996900574F6C /* Recorder.h */,
+				A9C1EE172025996900574F6C /* Recorder.m */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		A9C1EE19202599F000574F6C /* AudioConvert */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE41202599F000574F6C /* ReadMe.strings */,
+				A9C1EE1A202599F000574F6C /* AudioConvert.h */,
+				A9C1EE1B202599F000574F6C /* AudioConvert.m */,
+				A9C1EE25202599F000574F6C /* AudioDefine.h */,
+				A9C1EE1C202599F000574F6C /* AudioDecode */,
+				A9C1EE26202599F000574F6C /* AudioEncode */,
+				A9C1EE3C202599F000574F6C /* AudioSoundTouch */,
+				A9C1EE42202599F000574F6C /* SoundTouch */,
+			);
+			path = AudioConvert;
+			sourceTree = "<group>";
+		};
+		A9C1EE1C202599F000574F6C /* AudioDecode */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE1D202599F000574F6C /* AudioDecodeOperation.h */,
+				A9C1EE1E202599F000574F6C /* AudioDecodeOperation.mm */,
+				A9C1EE1F202599F000574F6C /* CADebugMacros.h */,
+				A9C1EE20202599F000574F6C /* CAMath.h */,
+				A9C1EE21202599F000574F6C /* CAStreamBasicDescription.cpp */,
+				A9C1EE22202599F000574F6C /* CAStreamBasicDescription.h */,
+				A9C1EE23202599F000574F6C /* CAXException.cpp */,
+				A9C1EE24202599F000574F6C /* CAXException.h */,
+			);
+			path = AudioDecode;
+			sourceTree = "<group>";
+		};
+		A9C1EE26202599F000574F6C /* AudioEncode */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE27202599F000574F6C /* AudioToAmr */,
+				A9C1EE36202599F000574F6C /* AudioToMp3 */,
+			);
+			path = AudioEncode;
+			sourceTree = "<group>";
+		};
+		A9C1EE27202599F000574F6C /* AudioToAmr */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE28202599F000574F6C /* amrwapper */,
+				A9C1EE2D202599F000574F6C /* lib */,
+				A9C1EE30202599F000574F6C /* opencore-amrnb */,
+				A9C1EE33202599F000574F6C /* opencore-amrwb */,
+			);
+			path = AudioToAmr;
+			sourceTree = "<group>";
+		};
+		A9C1EE28202599F000574F6C /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE29202599F000574F6C /* amrFileCodec.h */,
+				A9C1EE2A202599F000574F6C /* amrFileCodec.m */,
+				A9C1EE2B202599F000574F6C /* wav.h */,
+				A9C1EE2C202599F000574F6C /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		A9C1EE2D202599F000574F6C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE2E202599F000574F6C /* libopencore-amrnb.a */,
+				A9C1EE2F202599F000574F6C /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A9C1EE30202599F000574F6C /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE31202599F000574F6C /* interf_dec.h */,
+				A9C1EE32202599F000574F6C /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		A9C1EE33202599F000574F6C /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE34202599F000574F6C /* dec_if.h */,
+				A9C1EE35202599F000574F6C /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		A9C1EE36202599F000574F6C /* AudioToMp3 */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE37202599F000574F6C /* AudioEncodeOperation.h */,
+				A9C1EE38202599F000574F6C /* AudioEncodeOperation.m */,
+				A9C1EE39202599F000574F6C /* lame */,
+			);
+			path = AudioToMp3;
+			sourceTree = "<group>";
+		};
+		A9C1EE39202599F000574F6C /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE3A202599F000574F6C /* lame.h */,
+				A9C1EE3B202599F000574F6C /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		A9C1EE3C202599F000574F6C /* AudioSoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE3D202599F000574F6C /* AudioSoundTouchOperation.h */,
+				A9C1EE3E202599F000574F6C /* AudioSoundTouchOperation.mm */,
+				A9C1EE3F202599F000574F6C /* WaveHeader.cpp */,
+				A9C1EE40202599F000574F6C /* WaveHeader.h */,
+			);
+			path = AudioSoundTouch;
+			sourceTree = "<group>";
+		};
+		A9C1EE42202599F000574F6C /* SoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE43202599F000574F6C /* AAFilter.cpp */,
+				A9C1EE44202599F000574F6C /* AAFilter.h */,
+				A9C1EE45202599F000574F6C /* BPMDetect.cpp */,
+				A9C1EE46202599F000574F6C /* BPMDetect.h */,
+				A9C1EE47202599F000574F6C /* cpu_detect.h */,
+				A9C1EE48202599F000574F6C /* cpu_detect_x86.cpp */,
+				A9C1EE49202599F000574F6C /* FIFOSampleBuffer.cpp */,
+				A9C1EE4A202599F000574F6C /* FIFOSampleBuffer.h */,
+				A9C1EE4B202599F000574F6C /* FIFOSamplePipe.h */,
+				A9C1EE4C202599F000574F6C /* FIRFilter.cpp */,
+				A9C1EE4D202599F000574F6C /* FIRFilter.h */,
+				A9C1EE4E202599F000574F6C /* mmx_optimized.cpp */,
+				A9C1EE4F202599F000574F6C /* PeakFinder.cpp */,
+				A9C1EE50202599F000574F6C /* PeakFinder.h */,
+				A9C1EE51202599F000574F6C /* RateTransposer.cpp */,
+				A9C1EE52202599F000574F6C /* RateTransposer.h */,
+				A9C1EE53202599F000574F6C /* SoundTouch.cpp */,
+				A9C1EE54202599F000574F6C /* SoundTouch.h */,
+				A9C1EE55202599F000574F6C /* soundtouch_config.h */,
+				A9C1EE56202599F000574F6C /* sse_optimized.cpp */,
+				A9C1EE57202599F000574F6C /* STTypes.h */,
+				A9C1EE58202599F000574F6C /* TDStretch.cpp */,
+				A9C1EE59202599F000574F6C /* TDStretch.h */,
+			);
+			path = SoundTouch;
+			sourceTree = "<group>";
+		};
+		A9C1EE7220259D4900574F6C /* Dotime */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE7320259D4900574F6C /* DotimeManage.h */,
+				A9C1EE7420259D4900574F6C /* DotimeManage.m */,
+			);
+			path = Dotime;
+			sourceTree = "<group>";
+		};
+		A9C1EE7520259D4900574F6C /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A9C1EE7620259D4900574F6C /* SVProgressHUD.bundle */,
+				A9C1EE7720259D4900574F6C /* SVProgressHUD.h */,
+				A9C1EE7820259D4900574F6C /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9C1ED1A20254CE300574F6C /* LvSoundTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C1ED4320254CE400574F6C /* Build configuration list for PBXNativeTarget "LvSoundTouch" */;
+			buildPhases = (
+				A9C1ED1720254CE300574F6C /* Sources */,
+				A9C1ED1820254CE300574F6C /* Frameworks */,
+				A9C1ED1920254CE300574F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LvSoundTouch;
+			productName = LvSoundTouch;
+			productReference = A9C1ED1B20254CE300574F6C /* LvSoundTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9C1ED2E20254CE400574F6C /* LvSoundTouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C1ED4620254CE400574F6C /* Build configuration list for PBXNativeTarget "LvSoundTouchTests" */;
+			buildPhases = (
+				A9C1ED2B20254CE400574F6C /* Sources */,
+				A9C1ED2C20254CE400574F6C /* Frameworks */,
+				A9C1ED2D20254CE400574F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9C1ED3120254CE400574F6C /* PBXTargetDependency */,
+			);
+			name = LvSoundTouchTests;
+			productName = LvSoundTouchTests;
+			productReference = A9C1ED2F20254CE400574F6C /* LvSoundTouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9C1ED3920254CE400574F6C /* LvSoundTouchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C1ED4920254CE400574F6C /* Build configuration list for PBXNativeTarget "LvSoundTouchUITests" */;
+			buildPhases = (
+				A9C1ED3620254CE400574F6C /* Sources */,
+				A9C1ED3720254CE400574F6C /* Frameworks */,
+				A9C1ED3820254CE400574F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9C1ED3C20254CE400574F6C /* PBXTargetDependency */,
+			);
+			name = LvSoundTouchUITests;
+			productName = LvSoundTouchUITests;
+			productReference = A9C1ED3A20254CE400574F6C /* LvSoundTouchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9C1ED1320254CE300574F6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ss;
+				TargetAttributes = {
+					A9C1ED1A20254CE300574F6C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					A9C1ED2E20254CE400574F6C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9C1ED1A20254CE300574F6C;
+					};
+					A9C1ED3920254CE400574F6C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9C1ED1A20254CE300574F6C;
+					};
+				};
+			};
+			buildConfigurationList = A9C1ED1620254CE300574F6C /* Build configuration list for PBXProject "LvSoundTouch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9C1ED1220254CE300574F6C;
+			productRefGroup = A9C1ED1C20254CE300574F6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9C1ED1A20254CE300574F6C /* LvSoundTouch */,
+				A9C1ED2E20254CE400574F6C /* LvSoundTouchTests */,
+				A9C1ED3920254CE400574F6C /* LvSoundTouchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9C1ED1920254CE300574F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C1EE7A20259D4900574F6C /* SVProgressHUD.bundle in Resources */,
+				A9C1EE66202599F000574F6C /* ReadMe.strings in Resources */,
+				A9C1ED2920254CE300574F6C /* LaunchScreen.storyboard in Resources */,
+				A9C1ED2620254CE300574F6C /* Assets.xcassets in Resources */,
+				A9C1ED2420254CE300574F6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C1ED2D20254CE400574F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C1ED3820254CE400574F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9C1ED1720254CE300574F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C1EE6E202599F000574F6C /* RateTransposer.cpp in Sources */,
+				A9C1EE5A202599F000574F6C /* AudioConvert.m in Sources */,
+				A9C1EE6F202599F000574F6C /* SoundTouch.cpp in Sources */,
+				A9C1ED2120254CE300574F6C /* ViewController.swift in Sources */,
+				A9C1EE7920259D4900574F6C /* DotimeManage.m in Sources */,
+				A9C1EE6C202599F000574F6C /* mmx_optimized.cpp in Sources */,
+				A9C1ED1F20254CE300574F6C /* AppDelegate.swift in Sources */,
+				A9C1EE6B202599F000574F6C /* FIRFilter.cpp in Sources */,
+				A9C1EE71202599F000574F6C /* TDStretch.cpp in Sources */,
+				A9C1EE5B202599F000574F6C /* AudioDecodeOperation.mm in Sources */,
+				A9C1EE182025996900574F6C /* Recorder.m in Sources */,
+				A9C1EE6A202599F000574F6C /* FIFOSampleBuffer.cpp in Sources */,
+				A9C1EE7B20259D4900574F6C /* SVProgressHUD.m in Sources */,
+				A9C1EE67202599F000574F6C /* AAFilter.cpp in Sources */,
+				A9C1EE69202599F000574F6C /* cpu_detect_x86.cpp in Sources */,
+				A9C1EE68202599F000574F6C /* BPMDetect.cpp in Sources */,
+				A9C1EE5D202599F000574F6C /* CAXException.cpp in Sources */,
+				A9C1EE62202599F000574F6C /* AudioEncodeOperation.m in Sources */,
+				A9C1EE70202599F000574F6C /* sse_optimized.cpp in Sources */,
+				A9C1EE5C202599F000574F6C /* CAStreamBasicDescription.cpp in Sources */,
+				A9C1EE6D202599F000574F6C /* PeakFinder.cpp in Sources */,
+				A9C1EE5F202599F000574F6C /* wav.mm in Sources */,
+				A9C1EE64202599F000574F6C /* AudioSoundTouchOperation.mm in Sources */,
+				A9C1EE5E202599F000574F6C /* amrFileCodec.m in Sources */,
+				A9C1EE65202599F000574F6C /* WaveHeader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C1ED2B20254CE400574F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C1ED3420254CE400574F6C /* LvSoundTouchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C1ED3620254CE400574F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C1ED3F20254CE400574F6C /* LvSoundTouchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9C1ED3120254CE400574F6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9C1ED1A20254CE300574F6C /* LvSoundTouch */;
+			targetProxy = A9C1ED3020254CE400574F6C /* PBXContainerItemProxy */;
+		};
+		A9C1ED3C20254CE400574F6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9C1ED1A20254CE300574F6C /* LvSoundTouch */;
+			targetProxy = A9C1ED3B20254CE400574F6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9C1ED2220254CE300574F6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C1ED2320254CE300574F6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9C1ED2720254CE300574F6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C1ED2820254CE300574F6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9C1ED4120254CE400574F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9C1ED4220254CE400574F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9C1ED4420254CE400574F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = LvSoundTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioConvert/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioConvert/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/AudioConvert/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/AudioConvert/AudioEncode/AudioToMp3/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lv.com.LvSoundTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A9C1ED4520254CE400574F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = LvSoundTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioConvert/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/LvSoundTouch/AudioConvert/AudioEncode/AudioToMp3/lame",
+					"$(PROJECT_DIR)/AudioConvert/AudioEncode/AudioToAmr/lib",
+					"$(PROJECT_DIR)/AudioConvert/AudioEncode/AudioToMp3/lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lv.com.LvSoundTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A9C1ED4720254CE400574F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LvSoundTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lv.com.LvSoundTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LvSoundTouch.app/LvSoundTouch";
+			};
+			name = Debug;
+		};
+		A9C1ED4820254CE400574F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LvSoundTouchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lv.com.LvSoundTouchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LvSoundTouch.app/LvSoundTouch";
+			};
+			name = Release;
+		};
+		A9C1ED4A20254CE400574F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LvSoundTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lv.com.LvSoundTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LvSoundTouch;
+			};
+			name = Debug;
+		};
+		A9C1ED4B20254CE400574F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LvSoundTouchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lv.com.LvSoundTouchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LvSoundTouch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9C1ED1620254CE300574F6C /* Build configuration list for PBXProject "LvSoundTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C1ED4120254CE400574F6C /* Debug */,
+				A9C1ED4220254CE400574F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C1ED4320254CE400574F6C /* Build configuration list for PBXNativeTarget "LvSoundTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C1ED4420254CE400574F6C /* Debug */,
+				A9C1ED4520254CE400574F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C1ED4620254CE400574F6C /* Build configuration list for PBXNativeTarget "LvSoundTouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C1ED4720254CE400574F6C /* Debug */,
+				A9C1ED4820254CE400574F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C1ED4920254CE400574F6C /* Build configuration list for PBXNativeTarget "LvSoundTouchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C1ED4A20254CE400574F6C /* Debug */,
+				A9C1ED4B20254CE400574F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9C1ED1320254CE300574F6C /* Project object */;
+}
